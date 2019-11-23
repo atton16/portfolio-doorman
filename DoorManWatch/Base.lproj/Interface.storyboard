@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Glance Interface Controller-->
+        <scene sceneID="9bK-Iq-Pdg">
+            <objects>
+                <glanceController topTemplateType="mediumBody1" id="eVz-8w-KgX" customClass="GlanceController" customModule="DoorManWatch_Extension">
+                    <items>
+                        <label alignment="left" text="DoorMan" id="ugu-nw-k3N"/>
+                        <label alignment="left" hidden="YES" text="Label" id="WTB-1n-meZ"/>
+                        <group alignment="left" id="9Fh-Ef-zNq">
+                            <items>
+                                <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="Lock" contentMode="scaleAspectFit" id="FK5-vk-tYQ"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="glanceImage" destination="FK5-vk-tYQ" id="rb2-EA-YvR"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="215" y="581"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DoorManWatch" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Unlock" id="zAq-dp-4lz">
+                            <connections>
+                                <action selector="unlockTrigger" destination="AgC-eL-Hgc" id="GOK-Ui-A2V"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="40" alignment="left" text="DoorMan" textAlignment="left" id="fwY-dq-XWv">
+                            <fontDescription key="font" type="system" pointSize="27"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="unlockButton" destination="zAq-dp-4lz" id="hdG-ae-0wf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="215" y="280"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lock" width="128" height="128"/>
+    </resources>
+</document>

@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0917740C1C080841003869AB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0917740A1C080841003869AB /* Interface.storyboard */; };
+		0917740E1C080841003869AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0917740D1C080841003869AB /* Assets.xcassets */; };
+		091774151C080841003869AB /* DoorManWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 091774141C080841003869AB /* DoorManWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0917741A1C080841003869AB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091774191C080841003869AB /* InterfaceController.swift */; };
+		0917741C1C080841003869AB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0917741B1C080841003869AB /* ExtensionDelegate.swift */; };
+		0917741E1C080841003869AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0917741D1C080841003869AB /* Assets.xcassets */; };
+		09200D7F1C088AEF00D557FF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09200D7E1C088AEF00D557FF /* ComplicationController.swift */; };
+		0922FFDE1D12CCC20046871E /* DevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0922FFDD1D12CCC20046871E /* DevicesVC.swift */; };
+		0922FFE11D1805880046871E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0922FFDF1D1805880046871E /* Main.storyboard */; };
+		0922FFF21D18E6040046871E /* NewTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0922FFF11D18E6040046871E /* NewTicketVC.swift */; };
+		0922FFF51D18E6930046871E /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0922FFF41D18E6930046871E /* ShareVC.swift */; };
+		0922FFF91D1901F40046871E /* UIBarButtonAction_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0922FFF81D1901F40046871E /* UIBarButtonAction_2x.png */; };
+		0922FFFD1D190F320046871E /* UIBarButtonAction_2x_transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 0922FFFC1D190F320046871E /* UIBarButtonAction_2x_transparent.png */; };
+		0936B7281D59B1EE000C5856 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0936B7271D59B1EE000C5856 /* MessageBox.swift */; };
+		094043091B99B75A007EB651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094043081B99B75A007EB651 /* AppDelegate.swift */; };
+		0940430B1B99B75A007EB651 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940430A1B99B75A007EB651 /* HomeVC.swift */; };
+		094043101B99B75A007EB651 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0940430F1B99B75A007EB651 /* Images.xcassets */; };
+		0940431F1B99B75A007EB651 /* DoorManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0940431E1B99B75A007EB651 /* DoorManTests.swift */; };
+		094043291B99BED1007EB651 /* UnlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094043281B99BED1007EB651 /* UnlockButton.swift */; };
+		0950F78E1D5ABD5600575259 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0991830E1C07FB6100C56A58 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		096323D91C087C7D00AB513A /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096323D81C087C7D00AB513A /* GlanceController.swift */; };
+		099183111C07FC4700C56A58 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0991830E1C07FB6100C56A58 /* Alamofire.framework */; };
+		0993B2451D0FE5B000814B14 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993B2431D0FE5B000814B14 /* FBSDKCoreKit.framework */; };
+		0993B2461D0FE5B000814B14 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993B2441D0FE5B000814B14 /* FBSDKLoginKit.framework */; };
+		09A046001D0FF282004E903B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A045FF1D0FF282004E903B /* LoginVC.swift */; };
+		09A046081D103FAD004E903B /* continue-with-facebook-rect-alpha.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A046071D103FAD004E903B /* continue-with-facebook-rect-alpha.png */; };
+		09A0460C1D105136004E903B /* action-icon-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A0460B1D105136004E903B /* action-icon-white.png */; };
+		09A9E30A1D60A3E3000D9202 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A9E3091D60A3E3000D9202 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		091774161C080841003869AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094042FB1B99B75A007EB651 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 091774131C080841003869AB;
+			remoteInfo = "DoorManWatch Extension";
+		};
+		094043191B99B75A007EB651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 094042FB1B99B75A007EB651 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 094043021B99B75A007EB651;
+			remoteInfo = DoorMan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		091774261C080842003869AB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				091774151C080841003869AB /* DoorManWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0917742A1C080842003869AB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		099183131C07FC4700C56A58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0950F78E1D5ABD5600575259 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		091774081C080841003869AB /* DoorManWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorManWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0917740B1C080841003869AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0917740D1C080841003869AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0917740F1C080841003869AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		091774141C080841003869AB /* DoorManWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DoorManWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		091774191C080841003869AB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0917741B1C080841003869AB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0917741D1C080841003869AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0917741F1C080841003869AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09200D7E1C088AEF00D557FF /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0922FFDD1D12CCC20046871E /* DevicesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesVC.swift; sourceTree = "<group>"; };
+		0922FFE01D1805880046871E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0922FFF11D18E6040046871E /* NewTicketVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTicketVC.swift; sourceTree = "<group>"; };
+		0922FFF41D18E6930046871E /* ShareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
+		0922FFF81D1901F40046871E /* UIBarButtonAction_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonAction_2x.png; sourceTree = "<group>"; };
+		0922FFFC1D190F320046871E /* UIBarButtonAction_2x_transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonAction_2x_transparent.png; sourceTree = "<group>"; };
+		0936B7271D59B1EE000C5856 /* MessageBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBox.swift; sourceTree = "<group>"; };
+		094043031B99B75A007EB651 /* DoorMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		094043071B99B75A007EB651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094043081B99B75A007EB651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0940430A1B99B75A007EB651 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0940430F1B99B75A007EB651 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		094043181B99B75A007EB651 /* DoorManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorManTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0940431D1B99B75A007EB651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0940431E1B99B75A007EB651 /* DoorManTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorManTests.swift; sourceTree = "<group>"; };
+		094043281B99BED1007EB651 /* UnlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockButton.swift; sourceTree = "<group>"; };
+		096323D81C087C7D00AB513A /* GlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		0991830E1C07FB6100C56A58 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		0993B2431D0FE5B000814B14 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0993B2441D0FE5B000814B14 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		09A045FF1D0FF282004E903B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		09A046071D103FAD004E903B /* continue-with-facebook-rect-alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "continue-with-facebook-rect-alpha.png"; sourceTree = "<group>"; };
+		09A0460B1D105136004E903B /* action-icon-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-icon-white.png"; sourceTree = "<group>"; };
+		09A6CFA21D5AB88200C598E3 /* DoorMan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DoorMan.entitlements; sourceTree = "<group>"; };
+		09A9E3091D60A3E3000D9202 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		091774111C080841003869AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094043001B99B75A007EB651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099183111C07FC4700C56A58 /* Alamofire.framework in Frameworks */,
+				0993B2451D0FE5B000814B14 /* FBSDKCoreKit.framework in Frameworks */,
+				0993B2461D0FE5B000814B14 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094043151B99B75A007EB651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		091774091C080841003869AB /* DoorManWatch */ = {
+			isa = PBXGroup;
+			children = (
+				0917740A1C080841003869AB /* Interface.storyboard */,
+				0917740D1C080841003869AB /* Assets.xcassets */,
+				0917740F1C080841003869AB /* Info.plist */,
+			);
+			path = DoorManWatch;
+			sourceTree = "<group>";
+		};
+		091774181C080841003869AB /* DoorManWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				091774191C080841003869AB /* InterfaceController.swift */,
+				096323D81C087C7D00AB513A /* GlanceController.swift */,
+				0917741B1C080841003869AB /* ExtensionDelegate.swift */,
+				09200D7E1C088AEF00D557FF /* ComplicationController.swift */,
+				0917741D1C080841003869AB /* Assets.xcassets */,
+				0917741F1C080841003869AB /* Info.plist */,
+			);
+			path = "DoorManWatch Extension";
+			sourceTree = "<group>";
+		};
+		0922FFE21D180A1E0046871E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0940430A1B99B75A007EB651 /* HomeVC.swift */,
+				094043281B99BED1007EB651 /* UnlockButton.swift */,
+				0936B7271D59B1EE000C5856 /* MessageBox.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		0922FFE51D1814BA0046871E /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				0922FFDD1D12CCC20046871E /* DevicesVC.swift */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+		0922FFE61D1814C50046871E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				09A045FF1D0FF282004E903B /* LoginVC.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		0922FFF31D18E6070046871E /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				0922FFF41D18E6930046871E /* ShareVC.swift */,
+				0922FFF11D18E6040046871E /* NewTicketVC.swift */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
+		094042FA1B99B75A007EB651 = {
+			isa = PBXGroup;
+			children = (
+				0993B2421D0FE56900814B14 /* Frameworks */,
+				094043051B99B75A007EB651 /* DoorMan */,
+				0940431B1B99B75A007EB651 /* DoorManTests */,
+				091774091C080841003869AB /* DoorManWatch */,
+				091774181C080841003869AB /* DoorManWatch Extension */,
+				094043041B99B75A007EB651 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		094043041B99B75A007EB651 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				094043031B99B75A007EB651 /* DoorMan.app */,
+				094043181B99B75A007EB651 /* DoorManTests.xctest */,
+				091774081C080841003869AB /* DoorManWatch.app */,
+				091774141C080841003869AB /* DoorManWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		094043051B99B75A007EB651 /* DoorMan */ = {
+			isa = PBXGroup;
+			children = (
+				09A6CFA21D5AB88200C598E3 /* DoorMan.entitlements */,
+				094043081B99B75A007EB651 /* AppDelegate.swift */,
+				0993B24D1D0FF1B700814B14 /* VCs */,
+				0993B24C1D0FEE9400814B14 /* UI */,
+				094043061B99B75A007EB651 /* Supporting Files */,
+			);
+			path = DoorMan;
+			sourceTree = "<group>";
+		};
+		094043061B99B75A007EB651 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				094043071B99B75A007EB651 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0940431B1B99B75A007EB651 /* DoorManTests */ = {
+			isa = PBXGroup;
+			children = (
+				0940431E1B99B75A007EB651 /* DoorManTests.swift */,
+				0940431C1B99B75A007EB651 /* Supporting Files */,
+			);
+			path = DoorManTests;
+			sourceTree = "<group>";
+		};
+		0940431C1B99B75A007EB651 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0940431D1B99B75A007EB651 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0993B2421D0FE56900814B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0993B2431D0FE5B000814B14 /* FBSDKCoreKit.framework */,
+				0993B2441D0FE5B000814B14 /* FBSDKLoginKit.framework */,
+				0991830E1C07FB6100C56A58 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0993B24C1D0FEE9400814B14 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0922FFDF1D1805880046871E /* Main.storyboard */,
+				09A9E3091D60A3E3000D9202 /* Launch Screen.storyboard */,
+				09A0460B1D105136004E903B /* action-icon-white.png */,
+				09A046071D103FAD004E903B /* continue-with-facebook-rect-alpha.png */,
+				0922FFF81D1901F40046871E /* UIBarButtonAction_2x.png */,
+				0922FFFC1D190F320046871E /* UIBarButtonAction_2x_transparent.png */,
+				0940430F1B99B75A007EB651 /* Images.xcassets */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		0993B24D1D0FF1B700814B14 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				0922FFE21D180A1E0046871E /* Home */,
+				0922FFE61D1814C50046871E /* Login */,
+				0922FFE51D1814BA0046871E /* Devices */,
+				0922FFF31D18E6070046871E /* Share */,
+			);
+			name = VCs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		091774071C080841003869AB /* DoorManWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 091774271C080842003869AB /* Build configuration list for PBXNativeTarget "DoorManWatch" */;
+			buildPhases = (
+				091774061C080841003869AB /* Resources */,
+				091774261C080842003869AB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				091774171C080841003869AB /* PBXTargetDependency */,
+			);
+			name = DoorManWatch;
+			productName = DoorManWatch;
+			productReference = 091774081C080841003869AB /* DoorManWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		091774131C080841003869AB /* DoorManWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 091774231C080842003869AB /* Build configuration list for PBXNativeTarget "DoorManWatch Extension" */;
+			buildPhases = (
+				091774101C080841003869AB /* Sources */,
+				091774111C080841003869AB /* Frameworks */,
+				091774121C080841003869AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DoorManWatch Extension";
+			productName = "DoorManWatch Extension";
+			productReference = 091774141C080841003869AB /* DoorManWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		094043021B99B75A007EB651 /* DoorMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094043221B99B75A007EB651 /* Build configuration list for PBXNativeTarget "DoorMan" */;
+			buildPhases = (
+				094042FF1B99B75A007EB651 /* Sources */,
+				094043001B99B75A007EB651 /* Frameworks */,
+				094043011B99B75A007EB651 /* Resources */,
+				099183131C07FC4700C56A58 /* Embed Frameworks */,
+				0950F78F1D5ABDE200575259 /* ShellScript */,
+				0917742A1C080842003869AB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoorMan;
+			productName = DoorMan;
+			productReference = 094043031B99B75A007EB651 /* DoorMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		094043171B99B75A007EB651 /* DoorManTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094043251B99B75A007EB651 /* Build configuration list for PBXNativeTarget "DoorManTests" */;
+			buildPhases = (
+				094043141B99B75A007EB651 /* Sources */,
+				094043151B99B75A007EB651 /* Frameworks */,
+				094043161B99B75A007EB651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0940431A1B99B75A007EB651 /* PBXTargetDependency */,
+			);
+			name = DoorManTests;
+			productName = DoorManTests;
+			productReference = 094043181B99B75A007EB651 /* DoorManTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		094042FB1B99B75A007EB651 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Attawit Kittikrairit";
+				TargetAttributes = {
+					091774071C080841003869AB = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = ZU7P8298WC;
+					};
+					091774131C080841003869AB = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = ZU7P8298WC;
+					};
+					094043021B99B75A007EB651 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = ZU7P8298WC;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					094043171B99B75A007EB651 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 094043021B99B75A007EB651;
+					};
+				};
+			};
+			buildConfigurationList = 094042FE1B99B75A007EB651 /* Build configuration list for PBXProject "DoorMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 094042FA1B99B75A007EB651;
+			productRefGroup = 094043041B99B75A007EB651 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				094043021B99B75A007EB651 /* DoorMan */,
+				094043171B99B75A007EB651 /* DoorManTests */,
+				091774071C080841003869AB /* DoorManWatch */,
+				091774131C080841003869AB /* DoorManWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		091774061C080841003869AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0917740E1C080841003869AB /* Assets.xcassets in Resources */,
+				0917740C1C080841003869AB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		091774121C080841003869AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0917741E1C080841003869AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094043011B99B75A007EB651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A046081D103FAD004E903B /* continue-with-facebook-rect-alpha.png in Resources */,
+				09A0460C1D105136004E903B /* action-icon-white.png in Resources */,
+				0922FFFD1D190F320046871E /* UIBarButtonAction_2x_transparent.png in Resources */,
+				094043101B99B75A007EB651 /* Images.xcassets in Resources */,
+				0922FFF91D1901F40046871E /* UIBarButtonAction_2x.png in Resources */,
+				0922FFE11D1805880046871E /* Main.storyboard in Resources */,
+				09A9E30A1D60A3E3000D9202 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094043161B99B75A007EB651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0950F78F1D5ABDE200575259 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		091774101C080841003869AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0917741C1C080841003869AB /* ExtensionDelegate.swift in Sources */,
+				09200D7F1C088AEF00D557FF /* ComplicationController.swift in Sources */,
+				0917741A1C080841003869AB /* InterfaceController.swift in Sources */,
+				096323D91C087C7D00AB513A /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094042FF1B99B75A007EB651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0922FFF21D18E6040046871E /* NewTicketVC.swift in Sources */,
+				0936B7281D59B1EE000C5856 /* MessageBox.swift in Sources */,
+				0922FFDE1D12CCC20046871E /* DevicesVC.swift in Sources */,
+				094043291B99BED1007EB651 /* UnlockButton.swift in Sources */,
+				0922FFF51D18E6930046871E /* ShareVC.swift in Sources */,
+				0940430B1B99B75A007EB651 /* HomeVC.swift in Sources */,
+				094043091B99B75A007EB651 /* AppDelegate.swift in Sources */,
+				09A046001D0FF282004E903B /* LoginVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		094043141B99B75A007EB651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0940431F1B99B75A007EB651 /* DoorManTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		091774171C080841003869AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 091774131C080841003869AB /* DoorManWatch Extension */;
+			targetProxy = 091774161C080841003869AB /* PBXContainerItemProxy */;
+		};
+		0940431A1B99B75A007EB651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 094043021B99B75A007EB651 /* DoorMan */;
+			targetProxy = 094043191B99B75A007EB651 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0917740A1C080841003869AB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0917740B1C080841003869AB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		0922FFDF1D1805880046871E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0922FFE01D1805880046871E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		091774241C080842003869AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "DoorManWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrttle.DoorMan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		091774251C080842003869AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "DoorManWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrttle.DoorMan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		091774281C080842003869AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DoorManWatch_Extension;
+				INFOPLIST_FILE = DoorManWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrttle.DoorMan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DoorManWatch/DoorManWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		091774291C080842003869AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = DoorManWatch_Extension;
+				INFOPLIST_FILE = DoorManWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrttle.DoorMan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DoorManWatch/DoorManWatch-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		094043201B99B75A007EB651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		094043211B99B75A007EB651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		094043231B99B75A007EB651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DoorMan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrttle.DoorMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		094043241B99B75A007EB651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DoorMan/DoorMan.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DoorMan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrttle.DoorMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		094043261B99B75A007EB651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DoorManTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kittikrairit.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorMan.app/DoorMan";
+			};
+			name = Debug;
+		};
+		094043271B99B75A007EB651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DoorManTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kittikrairit.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoorMan.app/DoorMan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		091774231C080842003869AB /* Build configuration list for PBXNativeTarget "DoorManWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091774241C080842003869AB /* Debug */,
+				091774251C080842003869AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		091774271C080842003869AB /* Build configuration list for PBXNativeTarget "DoorManWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091774281C080842003869AB /* Debug */,
+				091774291C080842003869AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		094042FE1B99B75A007EB651 /* Build configuration list for PBXProject "DoorMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094043201B99B75A007EB651 /* Debug */,
+				094043211B99B75A007EB651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		094043221B99B75A007EB651 /* Build configuration list for PBXNativeTarget "DoorMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094043231B99B75A007EB651 /* Debug */,
+				094043241B99B75A007EB651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		094043251B99B75A007EB651 /* Build configuration list for PBXNativeTarget "DoorManTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094043261B99B75A007EB651 /* Debug */,
+				094043271B99B75A007EB651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 094042FB1B99B75A007EB651 /* Project object */;
+}
